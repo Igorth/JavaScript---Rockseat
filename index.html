@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>
+            Curso de JavaScript
+        </title>
+    </head>
+    <body>
+        <div id="app">
+            <div class="box">
+
+            </div>
+            <input type="text" name="nome" id="nome" class="nome"/>
+            <button class="botao">Adicionar</button>
+        </div>        
+        <script>
+            var inputElement = document.getElementById('nome');
+            var inputNameElement = document.getElementsByTagName('input')[0];
+            var inputClassElement = document.getElementsByClassName('nome');
+
+            var querySelector = document.querySelector('body div#app input');
+
+            var nameElement = document.querySelector('input[name=nome]');
+            var btnElement = document.querySelector('button.botao');
+
+            btnElement.onclick = function(){
+                var text = nameElement.value
+                alert(text);
+            }
+
+            console.log(btnElement);
+            console.log(querySelector);
+
+
+
+            var linkElement = document.createElement('a');
+            linkElement.setAttribute('href', 'https://www.google.com');
+            linkElement.setAttribute('title', 'Site do Google')
+
+            var textElement = document.createTextNode('Acessar o Google');
+            linkElement.appendChild(textElement);
+
+            var containerElement = document.querySelector('#app');
+            containerElement.appendChild(linkElement);
+
+            var inputElement = document.querySelector('#nome');
+            containerElement.removeChild(inputElement);
+
+
+            var boxElement = document.querySelector('.box');
+            boxElement.style.width = 100;
+            boxElement.style.height = 100;
+            boxElement.style.backgroundColor = '#f00';
+
+            function helloWorld(){
+                return 'Hello World';
+            }
+
+            
+        </script>
+    </body>
+</html>
