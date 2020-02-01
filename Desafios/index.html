@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Desafios JavaScript</title>
+</head>
+<body>
+
+    <div id="app">
+        <button id="botao">click here</button>
+        <ul></ul>
+        <input type="text" name="nome">
+        <button onclick="adicionar()">Adicionar</button>
+    </div>
+    <div id="square"></div>
+
+    <script>
+
+        var btnElement = document.getElementById('botao');
+        var testElement = document.getElementById('square')
+        btnElement.onclick = function(){
+        var newElement = document.createElement('div');
+        newElement.style.width = '100px';
+        newElement.style.height = '100px';
+        newElement.style.backgroundColor = '#f00';
+        newElement.style.margin = '30px';
+
+        testElement.appendChild(newElement);
+
+        document.getElementById("square").onmouseover = function(){            
+            newElement.style.backgroundColor = getRandomColor();
+        }        
+        }
+
+        function getRandomColor() {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+            var newColor = getRandomColor(); // #E943F0
+
+
+
+        var nomes = ['Igor', 'Laisa', 'IgLa'];
+        var listElement = document.querySelector('#app ul');
+        var inputElement = document.querySelector('#app input');
+        var buttonElement = document.querySelector('#app button');
+        
+        function agruparTudo() {
+            listElement.innerHTML = '';
+            for (const nome of nomes) {
+            var ordemElement = document.createElement('li');
+            var nomeText = document.createTextNode(nome);
+            ordemElement.appendChild(nomeText);
+            listElement.appendChild(ordemElement);
+            
+        }
+        }        
+
+        function adicionar(){
+            var textInput = inputElement.value;
+            nomes.push(textInput);
+            inputElement.value = '';
+            agruparTudo();
+            console.log(nomes);
+        }
+
+
+
+    </script>
+</body>
+</html>
