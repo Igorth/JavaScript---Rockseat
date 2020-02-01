@@ -18,6 +18,7 @@
 
     <script>
 
+        // Criar um quadro quando clicar no botao click here
         var btnElement = document.getElementById('botao');
         var testElement = document.getElementById('square')
         btnElement.onclick = function(){
@@ -29,6 +30,7 @@
 
         testElement.appendChild(newElement);
 
+        // Muda a cor do quadrado quando passar o mouse em cima
         document.getElementById("square").onmouseover = function(){            
             newElement.style.backgroundColor = getRandomColor();
         }        
@@ -45,7 +47,7 @@
             var newColor = getRandomColor(); // #E943F0
 
 
-
+        // Criar uma lista com um vetor e logo ir adicionando conteudo com o input
         var nomes = ['Igor', 'Laisa', 'IgLa'];
         var listElement = document.querySelector('#app ul');
         var inputElement = document.querySelector('#app input');
