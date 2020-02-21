@@ -88,7 +88,8 @@ function () {
   return Matematica;
 }();
 
-console.log(Matematica.soma(1, 2));
+console.log(Matematica.soma(1, 2)); // OPERACOES EM ARRAY
+
 var arr = [1, 3, 4, 5, 8, 9];
 var newArr = arr.map(function (item, index) {
   return item * index;
@@ -105,4 +106,11 @@ console.log(filter);
 var find = arr.find(function (item) {
   return item === 2;
 });
-console.log(find);
+console.log(find); //////////////////////////////////
+// ARROW FUNCTIONS
+
+var arra = [1, 3, 4, 5, 6];
+var newArra = arra.map(function (item) {
+  return item * 2;
+});
+console.log(newArra);
