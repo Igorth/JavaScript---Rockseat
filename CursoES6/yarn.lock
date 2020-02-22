@@ -1001,6 +1001,7 @@ __metadata:
   dependencies:
     "@babel/cli": ^7.8.4
     "@babel/core": ^7.8.4
+    "@babel/plugin-proposal-object-rest-spread": ^7.8.3
     "@babel/preset-env": ^7.8.4
   languageName: unknown
   linkType: soft

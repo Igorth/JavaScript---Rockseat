@@ -120,3 +120,51 @@ function mostraNome({nome, idade, endereco:{cidade}}){
     console.log(nome, idade, cidade);
 }
 mostraNome(usuario);
+
+
+
+// REST - pegar o resto das propriedades
+
+const usuarios = {
+    name: "igor",
+    idade: 32,
+    empresa: "testeteste"
+}
+
+const { name, ...resto } = usuarios;
+
+console.log(name);
+console.log(resto);
+
+
+const arrr = [1, 2, 3, 4];
+const [a, b, ...c] = arrr;
+
+console.log(a);
+console.log(b);
+console.log(c);
+
+
+function sub(...params){
+    return params.reduce((total, next) => total + next);
+}
+console.log(sub(1, 3, 4));
+
+
+
+// SPREAD operator
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+
+const arr3 = [ ...arr1, ...arr2];
+console.log(arr3);
+
+
+const usuario1 = {
+    nome: "igor",
+    idade: 32,
+    empresa: "teste"
+}
+
+ const usuario2 = { ...usuario1, nome: "Laisa"};
+ console.log(usuario2);

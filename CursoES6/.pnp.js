@@ -116,6 +116,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@babel/cli", "virtual:b2f9fe58b5d836b6377ecff2694baa6987909a5cc352def4ab2812eab5d208eeebcc3a4be906ec2b98a19901ff83709fd3e4cbb9543d6739b32f145033993b88#npm:7.8.4"],
             ["@babel/core", "npm:7.8.4"],
+            ["@babel/plugin-proposal-object-rest-spread", "virtual:b2f9fe58b5d836b6377ecff2694baa6987909a5cc352def4ab2812eab5d208eeebcc3a4be906ec2b98a19901ff83709fd3e4cbb9543d6739b32f145033993b88#npm:7.8.3"],
             ["@babel/preset-env", "virtual:b2f9fe58b5d836b6377ecff2694baa6987909a5cc352def4ab2812eab5d208eeebcc3a4be906ec2b98a19901ff83709fd3e4cbb9543d6739b32f145033993b88#npm:7.8.4"]
           ],
           "linkType": "SOFT"
@@ -543,13 +544,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@babel/plugin-proposal-object-rest-spread", [
-        ["virtual:7db61fe30692b0d59426c7c34d9231b330b7838794dc905dafb0e8e9b80fc33521e4666a9b7f3b067aeab92cfa3042fd7b320063c54317641ae36cfc4fd7bedd#npm:7.8.3", {
-          "packageLocation": "./.yarn/$$virtual/@babel-plugin-proposal-object-rest-spread-virtual-dca9c1c9c3/0/cache/@babel-plugin-proposal-object-rest-spread-npm-7.8.3-44ae847b64-1.zip/node_modules/@babel/plugin-proposal-object-rest-spread/",
+        ["virtual:b2f9fe58b5d836b6377ecff2694baa6987909a5cc352def4ab2812eab5d208eeebcc3a4be906ec2b98a19901ff83709fd3e4cbb9543d6739b32f145033993b88#npm:7.8.3", {
+          "packageLocation": "./.yarn/$$virtual/@babel-plugin-proposal-object-rest-spread-virtual-21b74e9cbe/0/cache/@babel-plugin-proposal-object-rest-spread-npm-7.8.3-44ae847b64-1.zip/node_modules/@babel/plugin-proposal-object-rest-spread/",
           "packageDependencies": [
-            ["@babel/plugin-proposal-object-rest-spread", "virtual:7db61fe30692b0d59426c7c34d9231b330b7838794dc905dafb0e8e9b80fc33521e4666a9b7f3b067aeab92cfa3042fd7b320063c54317641ae36cfc4fd7bedd#npm:7.8.3"],
+            ["@babel/plugin-proposal-object-rest-spread", "virtual:b2f9fe58b5d836b6377ecff2694baa6987909a5cc352def4ab2812eab5d208eeebcc3a4be906ec2b98a19901ff83709fd3e4cbb9543d6739b32f145033993b88#npm:7.8.3"],
             ["@babel/core", "npm:7.8.4"],
             ["@babel/helper-plugin-utils", "npm:7.8.3"],
-            ["@babel/plugin-syntax-object-rest-spread", "virtual:7db61fe30692b0d59426c7c34d9231b330b7838794dc905dafb0e8e9b80fc33521e4666a9b7f3b067aeab92cfa3042fd7b320063c54317641ae36cfc4fd7bedd#npm:7.8.3"]
+            ["@babel/plugin-syntax-object-rest-spread", "virtual:21b74e9cbe419ed47e456654922fa3725f00aa4508d7bf9c8bf8f52d72e3a994e4a2f514cf4d398226e4394ec2dc39e06929fde8d7aed964ab9a214a7f5daa24#npm:7.8.3"]
           ],
           "packagePeers": [
             "core"
@@ -659,10 +660,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@babel/plugin-syntax-object-rest-spread", [
-        ["virtual:7db61fe30692b0d59426c7c34d9231b330b7838794dc905dafb0e8e9b80fc33521e4666a9b7f3b067aeab92cfa3042fd7b320063c54317641ae36cfc4fd7bedd#npm:7.8.3", {
-          "packageLocation": "./.yarn/$$virtual/@babel-plugin-syntax-object-rest-spread-virtual-ae49486be7/0/cache/@babel-plugin-syntax-object-rest-spread-npm-7.8.3-60bd05b6ae-1.zip/node_modules/@babel/plugin-syntax-object-rest-spread/",
+        ["virtual:21b74e9cbe419ed47e456654922fa3725f00aa4508d7bf9c8bf8f52d72e3a994e4a2f514cf4d398226e4394ec2dc39e06929fde8d7aed964ab9a214a7f5daa24#npm:7.8.3", {
+          "packageLocation": "./.yarn/$$virtual/@babel-plugin-syntax-object-rest-spread-virtual-5cb4dd1242/0/cache/@babel-plugin-syntax-object-rest-spread-npm-7.8.3-60bd05b6ae-1.zip/node_modules/@babel/plugin-syntax-object-rest-spread/",
           "packageDependencies": [
-            ["@babel/plugin-syntax-object-rest-spread", "virtual:7db61fe30692b0d59426c7c34d9231b330b7838794dc905dafb0e8e9b80fc33521e4666a9b7f3b067aeab92cfa3042fd7b320063c54317641ae36cfc4fd7bedd#npm:7.8.3"],
+            ["@babel/plugin-syntax-object-rest-spread", "virtual:21b74e9cbe419ed47e456654922fa3725f00aa4508d7bf9c8bf8f52d72e3a994e4a2f514cf4d398226e4394ec2dc39e06929fde8d7aed964ab9a214a7f5daa24#npm:7.8.3"],
             ["@babel/core", "npm:7.8.4"],
             ["@babel/helper-plugin-utils", "npm:7.8.3"]
           ],
@@ -1190,7 +1191,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/plugin-proposal-dynamic-import", "virtual:7db61fe30692b0d59426c7c34d9231b330b7838794dc905dafb0e8e9b80fc33521e4666a9b7f3b067aeab92cfa3042fd7b320063c54317641ae36cfc4fd7bedd#npm:7.8.3"],
             ["@babel/plugin-proposal-json-strings", "virtual:7db61fe30692b0d59426c7c34d9231b330b7838794dc905dafb0e8e9b80fc33521e4666a9b7f3b067aeab92cfa3042fd7b320063c54317641ae36cfc4fd7bedd#npm:7.8.3"],
             ["@babel/plugin-proposal-nullish-coalescing-operator", "virtual:7db61fe30692b0d59426c7c34d9231b330b7838794dc905dafb0e8e9b80fc33521e4666a9b7f3b067aeab92cfa3042fd7b320063c54317641ae36cfc4fd7bedd#npm:7.8.3"],
-            ["@babel/plugin-proposal-object-rest-spread", "virtual:7db61fe30692b0d59426c7c34d9231b330b7838794dc905dafb0e8e9b80fc33521e4666a9b7f3b067aeab92cfa3042fd7b320063c54317641ae36cfc4fd7bedd#npm:7.8.3"],
+            ["@babel/plugin-proposal-object-rest-spread", "virtual:b2f9fe58b5d836b6377ecff2694baa6987909a5cc352def4ab2812eab5d208eeebcc3a4be906ec2b98a19901ff83709fd3e4cbb9543d6739b32f145033993b88#npm:7.8.3"],
             ["@babel/plugin-proposal-optional-catch-binding", "virtual:7db61fe30692b0d59426c7c34d9231b330b7838794dc905dafb0e8e9b80fc33521e4666a9b7f3b067aeab92cfa3042fd7b320063c54317641ae36cfc4fd7bedd#npm:7.8.3"],
             ["@babel/plugin-proposal-optional-chaining", "virtual:7db61fe30692b0d59426c7c34d9231b330b7838794dc905dafb0e8e9b80fc33521e4666a9b7f3b067aeab92cfa3042fd7b320063c54317641ae36cfc4fd7bedd#npm:7.8.3"],
             ["@babel/plugin-proposal-unicode-property-regex", "virtual:7db61fe30692b0d59426c7c34d9231b330b7838794dc905dafb0e8e9b80fc33521e4666a9b7f3b067aeab92cfa3042fd7b320063c54317641ae36cfc4fd7bedd#npm:7.8.3"],
@@ -1198,7 +1199,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/plugin-syntax-dynamic-import", "virtual:7db61fe30692b0d59426c7c34d9231b330b7838794dc905dafb0e8e9b80fc33521e4666a9b7f3b067aeab92cfa3042fd7b320063c54317641ae36cfc4fd7bedd#npm:7.8.3"],
             ["@babel/plugin-syntax-json-strings", "virtual:7db61fe30692b0d59426c7c34d9231b330b7838794dc905dafb0e8e9b80fc33521e4666a9b7f3b067aeab92cfa3042fd7b320063c54317641ae36cfc4fd7bedd#npm:7.8.3"],
             ["@babel/plugin-syntax-nullish-coalescing-operator", "virtual:7db61fe30692b0d59426c7c34d9231b330b7838794dc905dafb0e8e9b80fc33521e4666a9b7f3b067aeab92cfa3042fd7b320063c54317641ae36cfc4fd7bedd#npm:7.8.3"],
-            ["@babel/plugin-syntax-object-rest-spread", "virtual:7db61fe30692b0d59426c7c34d9231b330b7838794dc905dafb0e8e9b80fc33521e4666a9b7f3b067aeab92cfa3042fd7b320063c54317641ae36cfc4fd7bedd#npm:7.8.3"],
+            ["@babel/plugin-syntax-object-rest-spread", "virtual:21b74e9cbe419ed47e456654922fa3725f00aa4508d7bf9c8bf8f52d72e3a994e4a2f514cf4d398226e4394ec2dc39e06929fde8d7aed964ab9a214a7f5daa24#npm:7.8.3"],
             ["@babel/plugin-syntax-optional-catch-binding", "virtual:7db61fe30692b0d59426c7c34d9231b330b7838794dc905dafb0e8e9b80fc33521e4666a9b7f3b067aeab92cfa3042fd7b320063c54317641ae36cfc4fd7bedd#npm:7.8.3"],
             ["@babel/plugin-syntax-optional-chaining", "virtual:7db61fe30692b0d59426c7c34d9231b330b7838794dc905dafb0e8e9b80fc33521e4666a9b7f3b067aeab92cfa3042fd7b320063c54317641ae36cfc4fd7bedd#npm:7.8.3"],
             ["@babel/plugin-syntax-top-level-await", "virtual:7db61fe30692b0d59426c7c34d9231b330b7838794dc905dafb0e8e9b80fc33521e4666a9b7f3b067aeab92cfa3042fd7b320063c54317641ae36cfc4fd7bedd#npm:7.8.3"],
@@ -1295,6 +1296,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["CursoES6", "workspace:."],
             ["@babel/cli", "virtual:b2f9fe58b5d836b6377ecff2694baa6987909a5cc352def4ab2812eab5d208eeebcc3a4be906ec2b98a19901ff83709fd3e4cbb9543d6739b32f145033993b88#npm:7.8.4"],
             ["@babel/core", "npm:7.8.4"],
+            ["@babel/plugin-proposal-object-rest-spread", "virtual:b2f9fe58b5d836b6377ecff2694baa6987909a5cc352def4ab2812eab5d208eeebcc3a4be906ec2b98a19901ff83709fd3e4cbb9543d6739b32f145033993b88#npm:7.8.3"],
             ["@babel/preset-env", "virtual:b2f9fe58b5d836b6377ecff2694baa6987909a5cc352def4ab2812eab5d208eeebcc3a4be906ec2b98a19901ff83709fd3e4cbb9543d6739b32f145033993b88#npm:7.8.4"]
           ],
           "linkType": "SOFT"
