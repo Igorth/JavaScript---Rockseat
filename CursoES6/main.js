@@ -96,3 +96,27 @@ console.log(soma(1));
 
 const somaa = (a = 3, b = 1) => a + b;
 console.log(somaa());
+
+
+// DESESTRUTURACAO DE OBJETO
+
+const usuario = {
+    nome: "igor",
+    idade: 23,
+    endereco: {
+        cidade: "que",
+        estado: "nz",
+    },
+};
+
+console.log(usuario);
+
+const { nome, idade, endereco: { cidade} } = usuario
+console.log(nome);
+console.log(idade);
+console.log(cidade);
+
+function mostraNome({nome, idade, endereco:{cidade}}){
+    console.log(nome, idade, cidade);
+}
+mostraNome(usuario);

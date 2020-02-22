@@ -130,4 +130,29 @@ var somaa = function somaa() {
   return a + b;
 };
 
-console.log(somaa());
+console.log(somaa()); // DESESTRUTURACAO DE OBJETO
+
+var usuario = {
+  nome: "igor",
+  idade: 23,
+  endereco: {
+    cidade: "que",
+    estado: "nz"
+  }
+};
+console.log(usuario);
+var nome = usuario.nome,
+    idade = usuario.idade,
+    cidade = usuario.endereco.cidade;
+console.log(nome);
+console.log(idade);
+console.log(cidade);
+
+function mostraNome(_ref) {
+  var nome = _ref.nome,
+      idade = _ref.idade,
+      cidade = _ref.endereco.cidade;
+  console.log(nome, idade, cidade);
+}
+
+mostraNome(usuario);
