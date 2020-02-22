@@ -217,4 +217,13 @@ console.log(usuario2); // TEMPLATE LITERALS
 var nome1 = "igor";
 var idade1 = 23;
 console.log('Meu nome é ' + nome1);
-console.log("Meu nome \xE9 ".concat(nome1));
+console.log("Meu nome \xE9 ".concat(nome1)); // OBJECT SHORT SYNTAX
+
+var nome2 = "laisa";
+var idade2 = 12;
+var usuario3 = {
+  nome2: nome2,
+  idade2: idade2,
+  empresa: "entrega"
+};
+console.log(usuario3);

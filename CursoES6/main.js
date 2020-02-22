@@ -179,3 +179,16 @@ const usuario1 = {
  console.log('Meu nome é ' + nome1);
 
  console.log(`Meu nome é ${nome1}`)
+
+
+ // OBJECT SHORT SYNTAX
+ const nome2 = "laisa";
+ const idade2 = 12;
+
+ const usuario3 = {
+     nome2,
+     idade2,
+     empresa: "entrega",
+ }
+
+ console.log(usuario3);
