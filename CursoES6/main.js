@@ -82,3 +82,17 @@ const arra = [1, 3, 4, 5, 6];
 const newArra = arra.map(item => item * 2);
 
 console.log(newArra)
+
+
+
+// VALORES PADRAO
+
+function soma(a = 3, b = 6){
+    return a + b;
+}
+
+console.log(soma());
+console.log(soma(1));
+
+const somaa = (a = 3, b = 1) => a + b;
+console.log(somaa());

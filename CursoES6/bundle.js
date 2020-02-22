@@ -113,4 +113,21 @@ var arra = [1, 3, 4, 5, 6];
 var newArra = arra.map(function (item) {
   return item * 2;
 });
-console.log(newArra);
+console.log(newArra); // VALORES PADRAO
+
+function soma() {
+  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 3;
+  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 6;
+  return a + b;
+}
+
+console.log(soma());
+console.log(soma(1));
+
+var somaa = function somaa() {
+  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 3;
+  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
+  return a + b;
+};
+
+console.log(somaa());
