@@ -212,4 +212,9 @@ var usuario2 = _objectSpread({}, usuario1, {
   nome: "Laisa"
 });
 
-console.log(usuario2);
+console.log(usuario2); // TEMPLATE LITERALS
+
+var nome1 = "igor";
+var idade1 = 23;
+console.log('Meu nome é ' + nome1);
+console.log("Meu nome \xE9 ".concat(nome1));

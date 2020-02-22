@@ -168,3 +168,14 @@ const usuario1 = {
 
  const usuario2 = { ...usuario1, nome: "Laisa"};
  console.log(usuario2);
+
+
+
+ // TEMPLATE LITERALS
+
+ const nome1 = "igor";
+ const idade1 = 23;
+
+ console.log('Meu nome é ' + nome1);
+
+ console.log(`Meu nome é ${nome1}`)
