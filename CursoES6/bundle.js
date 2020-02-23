@@ -108,4 +108,69 @@ var mult = usuarios.map(function (item) {
 }).filter(function (item) {
   return item.idade <= 50;
 });
-console.log(mult);
+console.log(mult); // 3 EXERCICIO
+// 3.1
+
+var arr = [1, 2, 3, 4, 5];
+arr.map(function (item) {
+  return item + 10;
+});
+var mapa = arr.map(function (item) {
+  return item + 10;
+});
+console.log(mapa); // 3.2
+// Dica: Utilize uma constante pra function
+
+var usuario = {
+  nome: 'Diego',
+  idade: 23
+};
+
+function mostraIdade(usuario) {
+  return usuario.idade;
+}
+
+var mostraIdades = function mostraIdades(usuario) {
+  return usuario.idade;
+};
+
+console.log(mostraIdades(usuario)); // 3.3
+// Dica: Utilize uma constante pra function
+
+var nome = "Diego";
+var idade = 23;
+
+function mostraUsuario() {
+  var nome = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'Diego';
+  var idade = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 18;
+  return {
+    nome: nome,
+    idade: idade
+  };
+}
+
+var mostraUsuarios = function mostraUsuarios() {
+  var nome = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'Diego';
+  var idade = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 18;
+  return {
+    nome: nome,
+    idade: idade
+  };
+};
+
+console.log(mostraUsuarios(nome, idade));
+console.log(mostraUsuarios(idade)); // 3.4
+
+var promise = function promise() {
+  return new Promise(function (resolve, reject) {
+    return resolve();
+  });
+};
+
+var promises = function promises() {
+  return new Promise(resolve, function (reject) {
+    return resolve();
+  });
+};
+
+console.log(promises);
