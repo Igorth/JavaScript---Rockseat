@@ -185,3 +185,12 @@ const usuario3 = {...usuario, endereco:{cidade:"Lontras"}};
 
 console.log(usuario2);
 console.log(usuario3);
+
+
+// 6 EXERCICIO
+
+const usuarios = 'Diego';
+const idades = 23;
+//console.log('O usuário ' + usuario + ' possui ' + idade + ' anos');
+
+console.log(`O usuario ${usuarios} possui ${idades} anos.`)

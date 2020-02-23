@@ -199,4 +199,9 @@ var usuario3 = _objectSpread({}, usuario, {
 });
 
 console.log(usuario2);
-console.log(usuario3);
+console.log(usuario3); // 6 EXERCICIO
+
+var usuarios = 'Diego';
+var idades = 23; //console.log('O usuário ' + usuario + ' possui ' + idade + ' anos');
+
+console.log("O usuario ".concat(usuarios, " possui ").concat(idades, " anos."));
