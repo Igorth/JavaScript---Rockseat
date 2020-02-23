@@ -1,3 +1,4 @@
+/*
 // 1 EXERCICIO 
 
 class Usuario{
@@ -121,4 +122,38 @@ const promise = function() {
 const promises = () => new Promise(resolve, reject => resolve());
 
 console.log(promises);
+*/
 
+// EXERCICIO 4
+
+//4.1 Desestruturação simples
+const empresa = {
+    nome: 'Rocketseat',
+    endereco: {
+    cidade: 'Rio do Sul',
+    estado: 'SC',
+    }
+};
+
+const { nome, endereco: { cidade, estado } } = empresa;
+
+console.log(nome); // Rocketseat
+console.log(cidade); // Rio do Sul
+console.log(estado); // SC
+
+
+//4.2 Desestruturação em parâmetros
+
+function mostraInfo(usuario) {
+    return `${usuario.nome} tem ${usuario.idade} anos.`;
+   }
+   
+   
+mostraInfo({ nome: 'Diego', idade: 23 })
+
+
+function mostraInfos({nome, endereco:{cidade, estado}}){
+    return `${nome} tem ${cidade} anos.`;
+}
+
+console.log(mostraInfos(empresa));
